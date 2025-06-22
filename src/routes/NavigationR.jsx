@@ -9,10 +9,14 @@ import Publiclayout, { Privatelayout, PubliclayoutM } from '../layouts/mainlayou
 // Pages
 import Home from '../Pages/HomeP'
 import Login from '../Pages/LoginP'
-import CompanyAll from '../Pages/Company'
+import CompanyAll from '../Pages/CompanyP'
 // Error Page
 import NotFound from '../_partials/NotFound'
-import PlanesPrecies from '../Pages/Precies'
+import PlanesPrices from '../Pages/Prices'
+import GlobalData from '../Pages/globaldata'
+import RegisterUser from '../Pages/Register'
+import DashboardPrivate from '../Pages/Dashboards'
+import SettingsPage from '../Pages/SettingsPage'
 
 
 function NavigationRoutes() {
@@ -25,11 +29,15 @@ function NavigationRoutes() {
                 </Route>
                 <Route element={<PubliclayoutM />}>
                     <Route path="/company" element={<CompanyAll />} />
-                    <Route path="/precies" element={<PlanesPrecies />} />
+                    <Route path="/prices" element={<PlanesPrices />} />
+                    <Route path='/global' element={<GlobalData />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path='/register' element={<RegisterUser />} />
                 </Route>
                 {/* Private layout | missing Protected Route*/}
                 <Route element={<Privatelayout />}>
+                    <Route path='/dashboard' element={<DashboardPrivate />} />
+                    <Route path='/settings' element={<SettingsPage />} />
                     {/* Aquí puedes agregar rutas privadas */}
                     {/* Ejemplo: <Route path="/dashboard" element={<Dashboard />} /> */}
                 </Route>

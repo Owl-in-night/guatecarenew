@@ -2,8 +2,13 @@ import { Fragment } from 'react'
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { Check, Minus, Plus } from 'lucide-react'
+import { useTranslation } from 'react-i18next';
 
-const tiers = [
+
+export default function PlanesPrices() {
+  const { t } = useTranslation();
+  
+  const tiers = [
   {
     name: 'Starter',
     description: 'Everything you need to get started.',
@@ -77,16 +82,14 @@ const sections = [
   },
 ]
 
-export default function PlanesPrecies() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6 max-lg:text-center lg:max-w-7xl lg:px-8">
         <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-6xl lg:text-pretty">
-          Pricing that grows with your team size
+          {t('prices.h1Text1')}
         </h1>
         <p className="mt-6 max-w-2xl text-lg font-medium text-pretty text-gray-600 max-lg:mx-auto sm:text-xl/8">
-          Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer
-          loyalty, and driving sales.
+          {t('prices.pText1')}
         </p>
       </div>
       <div className="relative pt-16 sm:pt-24">

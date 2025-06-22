@@ -42,15 +42,11 @@ function PubliclayoutM() {
 function Privatelayout() {
   return (
     <div>
-      <header>
-        <h1>Private Layout</h1>
-      </header>
+      {/* header */}
       <main>
         <Outlet />
       </main>
-      <footer>
-        <p>&copy; 2023 Your Company</p>
-      </footer>
+      {/* footer */}
     </div>
   )
 }

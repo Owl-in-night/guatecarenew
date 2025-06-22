@@ -96,7 +96,7 @@ function FooterP() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <img
-              alt="GuateCare"
+              alt="Dr.Quetzal"
               src="https://i.ibb.co/sdGCvZpT/logo.png"
               className="h-28"
             />

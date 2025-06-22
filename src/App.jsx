@@ -1,7 +1,7 @@
 
 import './index.css'
 //All routes
-import NavigationRoutes from './routes/navigation'
+import NavigationRoutes from './routes/NavigationR'
 //Theme Provider
 //import ThemeProvider from './_partials/ThemeProvider'
 function App() {

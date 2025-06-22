@@ -1,38 +1,41 @@
-import { Book, Bookmark, ChevronRight, Landmark, Rss } from 'lucide-react'
+import { ArrowLeft, Building2, ChevronRight, Gem, Globe, Key } from 'lucide-react'
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router'
-const links = [
-  {
-    name: 'Documentation',
-    href: '#',
-    description: 'Learn how to integrate our tools with your app.',
-    icon: Book,
-  },
-  { name: 'API Reference', href: '#', description: 'A complete API reference for our libraries.', icon: Landmark },
-  {
-    name: 'Guides',
-    href: '#',
-    description: 'Installation guides that cover popular setups.',
-    icon: Bookmark,
-  },
-  { name: 'Blog', href: '#', description: 'Read our latest news and articles.', icon: Rss },
-]
 
 function NotFound() {
+  const { t } = useTranslation();
+  const links = [
+    {
+      name: t('notfound.spanText1'),
+      href: '/company',
+      description: t('notfound.pText2'),
+      icon: Building2,
+    },
+    { name: t('notfound.spanText2'), href: '/prices', description: t('notfound.pText3'), icon: Gem },
+    {
+      name: t('notfound.spanText3'),
+      href: '/global',
+      description: t('notfound.pText4'),
+      icon: Globe,
+    },
+    { name: t('notfound.spanText4'), href: '/login', description:  t('notfound.pText5'), icon: Key },
+  ]
+
   return (
     <div className="bg-white">
       <main className="mx-auto w-full max-w-7xl px-6 pt-10 pb-16 sm:pb-24 lg:px-8">
         <img
           alt="GuateCare"
-          src="https://i.ibb.co/s84KG99/logo.png"
-          className="mx-auto h-12 w-auto md:h-20"
+          src="https://i.ibb.co/20T84qQY/404.png"
+          className="mx-auto h-20 w-auto md:h-44"
         />
-        <div className="mx-auto mt-20 max-w-2xl text-center sm:mt-24">
+        <div className="mx-auto max-w-2xl text-center ">
           <p className="text-base/8 font-semibold text-indigo-600">404</p>
           <h1 className="mt-4 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">
-            This page does not exist
+            {t("notfound.h1Text1")}
           </h1>
           <p className="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-            Sorry, we couldn’t find the page you’re looking for.
+            {t("notfound.pText1")}
           </p>
         </div>
         <div className="mx-auto mt-16 flow-root max-w-lg sm:mt-20">
@@ -62,7 +65,7 @@ function NotFound() {
             {/* <a href="#" className="text-sm/6 font-semibold text-indigo-600">
               <span aria-hidden="true">&larr;</span> Back to home
             </a> */}
-            <Link to="/" className="text-sm/6 font-semibold text-indigo-600"><span aria-hidden="true">&larr;</span> Back to home</Link>
+            <Link to="/" className="text-sm/6 font-semibold text-indigo-600"><ArrowLeft className='inline' /> Back to home</Link>
           </div>
         </div>
       </main>

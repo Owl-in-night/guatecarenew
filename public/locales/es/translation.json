@@ -1,0 +1,93 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "company": "Compañía",
+    "price": "Precios",
+    "globaldata":"Datos globales",
+    "login": "Iniciar sesión",    
+    "register": "Registrarse",
+    "logout": "Cerrar sesión"
+  },
+  "home": {
+    "button1": "Conoce más sobre GuateCare.",
+    "button1E": "Saber más",
+    "button2": "Iniciar sesión",
+    "button3": "Malnutrición",
+    "h2Text1": "Guatemala",
+    "pText1": "Una infancia robada por la desnutrición.",
+    "pText2": "Según el Centro de Investigación Económica y Presupuestaria",
+    "pText3": "“en términos de eficiencia económica, la inversión social en la primera infancia posee efectos más marcados sobre la formación de capacidades que invertir en etapas posteriores de la vida (después de los 6 años)”.",
+    "dtText1": "Información y datos limitados:",
+    "ddText1": " La falta de tecnología impide recopilar y analizar datos en tiempo real sobre la desnutrición, dificultando decisiones informadas e intervenciones efectivas.",
+    "dtText2": "Acceso deficiente a servicios y monitoreo:",
+    "ddText2": "La escasez de inversión en tecnología limita los servicios de salud y nutrición en zonas remotas, impidiendo el seguimiento infantil y el apoyo a las familias.",
+    "dtText3": "Falta de alerta y respuesta rápida:",
+    "ddText3": "Sin plataformas tecnológicas, es difícil detectar crisis nutricionales emergentes, retrasando la ayuda y dejando a la primera infancia más vulnerable."
+  },
+  "company": {
+    "history": "Nuestra historia",
+    "origin": "A finales de 2023 nació GuateCare, impulsado por una propuesta que buscaba integrar la tecnología para mejorar la detección de la desnutrición aguda en niños de 0 a 2 años.",
+    "pText1": "Somos GuateCare, una solución digital 100% guatemalteca y pionera en su campo. Trabajamos de la mano con expertos en salud para detectar la desnutrición en niños de corta edad. Nuestra plataforma surge de la urgente necesidad de crear un sistema de monitoreo y alerta que brinde a la población acceso público y transparente a la información sobre los casos detectados.",
+    "pText2": "Nuestro objetivo primordial es mejorar la calidad de vida de los infantes que padecen desnutrición. Lo logramos mediante la implementación de tecnología avanzada: utilizando elementos electrónicos, sensores y módulos (extensiones) para recopilar datos de peso y estatura con mayor precisión.",
+    "pText3": "Estamos en constante actualización, incorporando nuevas herramientas y características clave que marcarán una mejora significativa en la detección de casos de desnutrición.",
+    "pText4": "Nuestros componentes electrónicos están diseñados para ser completamente seguros y no representan ningún riesgo para la salud de los niños. Hemos realizado una exhaustiva investigación y selección de sensores, asegurando que no haya ninguna limitación para su uso en este proyecto.",
+    "dtText1": "Fecha de creación",
+    "ddText1": "",
+    "dtText2": "Pruebas realizadas hasta ahora",
+    "dtText3": "Inversión parental",
+    "ddText2": "Q.3,900.00",
+    "dtText4": "Organizaciones involucradas",
+    "h2Text1": "¡Gracias por su confianza y apoyo!",
+    "pText5": "Estamos sumamente agradecidos por su apoyo a nuestro proyecto, que busca detectar la desnutrición aguda con tecnología. Su respaldo es clave para que podamos ayudar a quienes más lo necesitan.",
+    "aText1": "Iniciar sesión",
+    "aText2": "Obtener plan ahora" 
+  },
+  "prices":{
+    "h1Text1": "Identifica casos de desnutrición rápidamente.",
+    "pText1": "Encuentra el plan perfecto, diseñado para la población de lactantes de tu localidad, y empieza de inmediato a marcar la diferencia en la detección de la desnutrición."
+  },
+  "globaldata":{
+    "h1Text1": "Flujo de datos",
+    "aText1": "Últimos 7 días",
+    "aText2": "Últimos 30 días",
+    "aText3": "Todo el tiempo"
+  },
+  "login":{
+    "h2Text1": "Inicia sesión en GuateCare",
+    "pText1": "¿Aún no tienes una cuenta?",
+    "aText1": "Registrate en GuateCare",
+    "labelText1": "Correo electrónico",
+    "labelText2": "Contraseña",
+    "labelText3": "Recúerdame",
+    "aText2": "¿Olvidaste tú contraseña?",
+    "buttonText1": "Iniciar sesión",
+    "spanText1": "O continuar con"
+  },
+  "register":{
+    "h2Text1": "Registrese en GuateCare",
+    "labelText0": "Nombre completo",
+    "labelText1": "Correo electrónico",
+    "labelText2": "Contraseña",
+    "labelText3": "Confirmar contraseña",
+    "labelText4": "Recúerdame",
+    "buttonText1": "Completar registro",
+    "spanText1": "Puedes iniciar sesión con"
+  },
+  "notfound":{
+    "h1Text1":"Esta página no existe",
+    "pText1": "Lo sentimos, no pudimos encontrar la página que estás buscando.",
+    "spanText1": "Compañia",
+    "pText2": "Conoce la historia de GuateCare contada por el creador.",
+    "spanText2": "Precios",
+    "pText3": "Obtén lo último en innovación al costo más accesible del mercado.",
+    "spanText3": "Datos globales",
+    "pText4": "Visualiza los datos globales capturados en tiempo real.",
+    "spanText4": "Iniciar sesión",
+    "pText5": "Accede a todas nuestras herramientas tecnologicas ahora mismo."
+  },
+  "footer": {
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
+    "help": "Ayuda"
+  }
+}

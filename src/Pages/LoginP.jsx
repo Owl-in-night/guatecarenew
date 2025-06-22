@@ -1,15 +1,18 @@
+import { useTranslation } from "react-i18next";
+
 export default function Login() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="flex min-h-full flex-1">
         <div className="flex flex-1 flex-col justify-center px-4 py-24 w-1/2 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-              <h2 className="mt-16 text-2xl/9 font-bold tracking-tight text-gray-900">Sign in to your account</h2>
+              <h2 className="mt-16 text-2xl/9 font-bold tracking-tight text-gray-900">{t('login.h2Text1')}</h2>
               <p className="mt-2 text-sm/6 text-gray-500">
-                Not a member?{' '}
-                <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                  Start a 14 day free trial
+                {t('login.pText1')}{' '}
+                <a href="/register" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  {t('login.aText1')}
                 </a>
               </p>
             </div>
@@ -19,7 +22,7 @@ export default function Login() {
                 <form action="#" method="POST" className="space-y-6">
                   <div>
                     <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
-                      Email address
+                      {t('login.labelText1')}
                     </label>
                     <div className="mt-2">
                       <input
@@ -35,7 +38,7 @@ export default function Login() {
 
                   <div>
                     <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
-                      Password
+                      {t('login.labelText2')}
                     </label>
                     <div className="mt-2">
                       <input
@@ -82,13 +85,13 @@ export default function Login() {
                         </div>
                       </div>
                       <label htmlFor="remember-me" className="block text-sm/6 text-gray-900">
-                        Remember me
+                        {t('login.labelText3')}
                       </label>
                     </div>
 
                     <div className="text-sm/6">
                       <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                        Forgot password?
+                        {t('login.aText2')}
                       </a>
                     </div>
                   </div>
@@ -98,7 +101,7 @@ export default function Login() {
                       type="submit"
                       className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                      Sign in
+                      {t('login.buttonText1')}
                     </button>
                   </div>
                 </form>
@@ -110,7 +113,7 @@ export default function Login() {
                     <div className="w-full border-t border-gray-200" />
                   </div>
                   <div className="relative flex justify-center text-sm/6 font-medium">
-                    <span className="bg-white px-6 text-gray-900">Or continue with</span>
+                    <span className="bg-white px-6 text-gray-900">{t('login.spanText1')}</span>
                   </div>
                 </div>
 
@@ -160,8 +163,8 @@ export default function Login() {
         </div>
         <div className="relative hidden w-0 flex-1 lg:block">
           <img
-            alt=""
-            src="https://i.ibb.co/G4dzd2YV/guatecarelogin.png"
+            alt="Dr.Dog"
+            src="https://i.ibb.co/GvXVWs0h/login.png"
             className="absolute inset-0 size-full object-cover"
           />
         </div>
